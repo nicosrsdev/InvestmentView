@@ -1,4 +1,4 @@
-# Investment View Application $\textcolor{blue}{\textit{(Alpha version)}}$
+# Investment View Application (Alpha version)
 
 Welcome to the official repository for the **Investment View** application, available for both Android and Windows platforms.
 
