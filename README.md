@@ -5,10 +5,8 @@ Welcome to the official repository for the **Investment View** application, avai
 This application provides users with a comprehensive suite of tools designed to seamlessly monitor and manage financial investments. The following capabilities are currently offered across our supported platforms.
 
 > **Latest release:** [Android & Windows v0.29](https://github.com/nicosrsdev/InvestmentView/releases/latest)  
-> **Repository:** [nicosrsdev/InvestmentView](https://github.com/nicosrsdev/InvestmentView)  
-> **Image Gallery:** [InvestmentView/Screenshots](https://nicosrsdev.github.io/InvestmentView/)  
- 
-
+> **Repository:** [nicosrsdev/InvestmentView](https://github.com/nicosrsdev/InvestmentView)
+> **Image Gallery:** [InvestmentView/Screenshots](https://nicosrsdev.github.io/InvestmentView/)
 
 
 
@@ -29,12 +27,28 @@ Monitor and analyze the performance of your selected assets:
 <table>
   <tr>
     <td valign="top">
-      <a href="screenshots/watchlist/watchlist01.png"><img src="screenshots/watchlist/watchlist01.png" alt="Watchlist screenshot 1" width="220"></a><br>
-      <a href="screenshots/watchlist/watchlist02.png"><img src="screenshots/watchlist/watchlist02.png" alt="Watchlist screenshot 2" width="220"></a><br>
-      <a href="screenshots/watchlist/watchlist03.png"><img src="screenshots/watchlist/watchlist03.png" alt="Watchlist screenshot 3" width="220"></a>
+      <a href="screenshots/watchlist/watchlist01.png"><img src="screenshots/watchlist/watchlist01.png" alt="Watchlist screenshot 1" width="400"></a><br>
+      <a href="screenshots/watchlist/watchlist04.png"><img src="screenshots/watchlist/watchlist04.png" alt="Watchlist screenshot 4" width="400"></a>
     </td>
     <td valign="top">
-      <a href="screenshots/watchlist/watchlist04.png"><img src="screenshots/watchlist/watchlist04.png" alt="Watchlist screenshot 4" width="183"></a>
+      <a href="screenshots/watchlist/watchlist02.png"><img src="screenshots/watchlist/watchlist02.png" alt="Watchlist screenshot 2" width="400"></a><br>
+      <a href="screenshots/watchlist/watchlist03.png"><img src="screenshots/watchlist/watchlist03.png" alt="Watchlist screenshot 3" width="400"></a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <a href="screenshots/watchlist/watchlist05.png"><img src="screenshots/watchlist/watchlist05.png" alt="Watchlist screenshot 4" width="400"></a>
+    </td>
+    <td valign="top">
+      <a href="screenshots/watchlist/watchlist06.png"><img src="screenshots/watchlist/watchlist06.png" alt="Watchlist screenshot 4" width="400"></a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <a href="screenshots/watchlist/watchlist07.png"><img src="screenshots/watchlist/watchlist07.png" alt="Watchlist screenshot 4" width="400"></a>
+    </td>
+    <td valign="top">
+      <a href="screenshots/watchlist/watchlist08.png"><img src="screenshots/watchlist/watchlist08.png" alt="Watchlist screenshot 4" width="400"></a>
     </td>
   </tr>
 </table>
@@ -63,10 +77,10 @@ Maintain complete oversight of your personal investments:
 <table>
   <tr>
     <td valign="top">
-      <a href="screenshots/portfolio/portfolio01.png"><img src="screenshots/portfolio/portfolio01.png" alt="My Portfolio screenshot 1" width="198"></a>      
+      <a href="screenshots/portfolio/portfolio01.png"><img src="screenshots/portfolio/portfolio01.png" alt="My Portfolio screenshot 1" width="380"></a>      
     </td>
     <td valign="top">
-      <a href="screenshots/portfolio/portfolio02.png"><img src="screenshots/portfolio/portfolio02.png" alt="My Portfolio screenshot 2" width="219"></a>
+      <a href="screenshots/portfolio/portfolio02.png"><img src="screenshots/portfolio/portfolio02.png" alt="My Portfolio screenshot 2" width="419"></a>
     </td>
   </tr>
 </table>
@@ -85,7 +99,7 @@ Ensure your financial data is always secure and up-to-date:
 
 - **Import/Export Functionality:** Seamlessly export and import data using Excel and JSON file formats. This feature allows users to easily update, back up, and migrate their portfolio transactions across devices.
 
-<a href="screenshots/backup/backup01.png"><img src="screenshots/backup/backup01.png" alt="Backup and data management screenshot" width="220"></a>
+<a href="screenshots/backup/backup01.png"><img src="screenshots/backup/backup01.png" alt="Backup and data management screenshot" width="400"></a>
 
 
 
@@ -104,8 +118,9 @@ Users operating the Windows desktop application benefit from the following addit
 - **System Tray Integration:** Receive convenient system tray notifications for quick, at-a-glance updates on your tracked assets.
 - **Customizable Alerts:** Set up automated alerts for daily market fluctuations, notifying you instantly of ±1% to 5% changes in asset value.
 
-<a href="screenshots/windows/windows01.png"><img src="screenshots/windows/windows01.png" alt="Windows-exclusive features screenshot" width="220"></a>
-
+<a href="screenshots/windows/windows01.png"><img src="screenshots/windows/windows01.png" alt="Windows-exclusive features screenshot" width="650"></a>
+<a href="screenshots/windows/windows02.png"><img src="screenshots/windows/windows02.png" alt="Windows-exclusive features screenshot" width="650"></a>
+<a href="screenshots/windows/windows03.png"><img src="screenshots/windows/windows03.png" alt="Windows-exclusive features screenshot" width="650"></a>
 
 
 

@@ -16,15 +16,23 @@
   main { max-width:1080px; margin:0 auto; padding:20px; }
   section { margin:32px 0; }
   section h2 { border-bottom:1px solid var(--border); padding-bottom:8px; font-size:20px; }
-  .grid { display:flex; flex-wrap:wrap; gap:14px; margin-top:16px; }
-  .thumb { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:8px; cursor:zoom-in; transition:transform .12s ease, border-color .12s ease; }
+  .grid { display:flex; flex-wrap:wrap; gap:12px; margin-top:16px; align-items:flex-start; }
+  .thumb {
+    background:var(--card); border:1px solid var(--border); border-radius:8px;
+    padding:6px; cursor:zoom-in; width:140px;
+    transition:transform .12s ease, border-color .12s ease;
+  }
   .thumb:hover { transform:translateY(-2px); border-color:var(--accent); }
-  .thumb img { display:block; height:190px; width:auto; border-radius:4px; }
+  .thumb img { display:block; width:100%; height:auto; border-radius:4px; }
+  .thumb .name { display:block; margin-top:6px; color:var(--muted); font-size:11px; text-align:center; word-break:break-all; }
   footer { text-align:center; color:var(--muted); padding:30px 20px 50px; font-size:13px; }
-  /* Lightbox */
-  #lb { position:fixed; inset:0; background:rgba(0,0,0,.9); display:none; align-items:center; justify-content:center; z-index:1000; }
+  /* Lightbox — native / default size within viewport */
+  #lb { position:fixed; inset:0; background:rgba(0,0,0,.92); display:none; align-items:center; justify-content:center; z-index:1000; }
   #lb.open { display:flex; }
-  #lb img { max-width:92vw; max-height:86vh; border-radius:6px; box-shadow:0 10px 40px rgba(0,0,0,.6); }
+  #lb img {
+    max-width:min(96vw, 1400px); max-height:90vh; width:auto; height:auto;
+    object-fit:contain; border-radius:6px; box-shadow:0 10px 40px rgba(0,0,0,.6);
+  }
   #lb .cap { position:absolute; bottom:18px; left:0; right:0; text-align:center; color:#e6edf3; font-size:14px; }
   #lb button { position:absolute; background:rgba(255,255,255,.08); color:#fff; border:1px solid rgba(255,255,255,.25); border-radius:8px; font-size:22px; width:48px; height:48px; cursor:pointer; }
   #lb button:hover { background:rgba(255,255,255,.18); }
@@ -36,7 +44,7 @@
 <body>
 <header>
   <h1>Investment View <span class="alpha">(Alpha version)</span></h1>
-  <p>Screenshot gallery — click any image to open it in a popup.</p>
+  <p>Screenshot gallery — click any thumbnail to open it at full size.</p>
   <p><a href="https://github.com/nicosrsdev/InvestmentView">Repository</a> &nbsp;·&nbsp; <a href="https://github.com/nicosrsdev/InvestmentView/releases/latest">Latest release</a></p>
 </header>
 <main>
@@ -70,20 +78,39 @@
 <script>
   var BASE = "https://raw.githubusercontent.com/nicosrsdev/InvestmentView/main/screenshots/";
   var SECTIONS = [
-    ["watchlist/watchlist01.png","watchlist/watchlist02.png","watchlist/watchlist03.png","watchlist/watchlist04.png"],
-    ["portfolio/portfolio01.png","portfolio/portfolio02.png"],
-    ["backup/backup01.png"],
-    ["windows/windows01.png"]
+    [
+      "watchlist/watchlist01.png",
+      "watchlist/watchlist02.png",
+      "watchlist/watchlist03.png",
+      "watchlist/watchlist04.png",
+      "watchlist/watchlist05.png",
+      "watchlist/watchlist06.png",
+      "watchlist/watchlist07.png",
+      "watchlist/watchlist08.png"
+    ],
+    [
+      "portfolio/portfolio01.png",
+      "portfolio/portfolio02.png"
+    ],
+    [
+      "backup/backup01.png"
+    ],
+    [
+      "windows/windows01.png",
+      "windows/windows02.png",
+      "windows/windows03.png"
+    ]
   ];
   var all = [];
   var grids = document.querySelectorAll("[data-gallery]");
   SECTIONS.forEach(function(list, si){
     list.forEach(function(rel){
       var url = BASE + rel;
-      var idx = all.push({ url:url, name:rel.split("/").pop() }) - 1;
+      var name = rel.split("/").pop();
+      var idx = all.push({ url:url, name:name }) - 1;
       var d = document.createElement("div");
       d.className = "thumb";
-      d.innerHTML = '<img loading="lazy" src="'+url+'" alt="'+rel+'">';
+      d.innerHTML = '<img loading="lazy" src="'+url+'" alt="'+name+'"><span class="name">'+name+'</span>';
       d.addEventListener("click", function(){ open(idx); });
       grids[si].appendChild(d);
     });
@@ -91,8 +118,8 @@
 
   var lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
   var cur = 0;
-  function open(i){ cur = i; render(); lb.classList.add("open"); }
-  function close(){ lb.classList.remove("open"); }
+  function open(i){ cur = i; render(); lb.classList.add("open"); document.body.style.overflow = "hidden"; }
+  function close(){ lb.classList.remove("open"); document.body.style.overflow = ""; }
   function render(){ lbImg.src = all[cur].url; lbCap.textContent = all[cur].name + " ("+(cur+1)+"/"+all.length+")"; }
   function prev(){ cur = (cur - 1 + all.length) % all.length; render(); }
   function next(){ cur = (cur + 1) % all.length; render(); }
