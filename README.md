@@ -1,4 +1,4 @@
-# Investment View (Alpha version)
+# Investment View (Alpha)
 
 Welcome to the official repository for the **Investment View** application, available for both Android and Windows platforms.
 
