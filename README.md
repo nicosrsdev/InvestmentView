@@ -5,8 +5,8 @@ Welcome to the official repository for the **Investment View** application, avai
 This application provides users with a comprehensive suite of tools designed to seamlessly monitor and manage financial investments. The following capabilities are currently offered across our supported platforms.
 
 > **Latest release:** [Android & Windows v0.29](https://github.com/nicosrsdev/InvestmentView/releases/latest)  
-> **Repository:** [nicosrsdev/InvestmentView](https://github.com/nicosrsdev/InvestmentView)
-> **Image Gallery:** [InvestmentView/Screenshots](https://nicosrsdev.github.io/InvestmentView/)
+> **Repository:** [nicosrsdev/InvestmentView](https://github.com/nicosrsdev/InvestmentView)  
+> **Image Gallery:** [InvestmentView Screenshots](https://nicosrsdev.github.io/InvestmentView/)
 
 
 
