@@ -117,7 +117,7 @@ Receive price notifications on windows and android platforms.
       <a href="screenshots/notifications/notifications01.png"><img src="screenshots/notifications/notifications01.png" alt="notifications screenshot 1" width="400"></a>
     </td>
     <td valign="top">
-        <a href="screenshots/notifications/notifications02.png"><img src="screenshots/notifications/notifications02.png"  alt="notifications screenshot 2" width="320"></a>
+        <a href="screenshots/notifications/notifications02.png"><img src="screenshots/notifications/notifications02.png"  alt="notifications screenshot 2" width="325"></a>
     </td>
   </tr>
 </table>
