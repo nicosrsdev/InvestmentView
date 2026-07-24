@@ -1,12 +1,12 @@
-# Investment View (Alpha)
+# Investment View
 
 Welcome to the official repository for the **Investment View** application, available for both Android and Windows platforms.
 
 This application provides users with a comprehensive suite of tools designed to seamlessly monitor and manage financial investments. The following capabilities are currently offered across our supported platforms.
 
-> **Latest release:** [Android & Windows v0.29](https://github.com/nicosrsdev/InvestmentView/releases/latest)  
+> **Latest release:** [Android & Windows v0.33](https://github.com/nicosrsdev/InvestmentView/releases/latest)  
 > **Repository:** [nicosrsdev/InvestmentView](https://github.com/nicosrsdev/InvestmentView)  
-> **Image Gallery:** [InvestmentView Screenshots](https://nicosrsdev.github.io/InvestmentView/)
+> **Image Gallery:** [InvestmentView/Screenshots](https://nicosrsdev.github.io/InvestmentView/)
 
 
 
@@ -104,11 +104,27 @@ Ensure your financial data is always secure and up-to-date:
 
 
 
+---
+
+
+## Price Notifications
+
+Receive price notifications on windows and android platforms.
+
+<table>
+ <tr>
+    <td valign="top">
+      <a href="screenshots/notifications/notifications01.png"><img src="screenshots/notifications/notifications01.png" alt="notifications screenshot 1" width="400"></a>
+    </td>
+    <td valign="top">
+        <a href="screenshots/notifications/notifications02.png"><img src="screenshots/notifications/notifications02.png"  alt="notifications screenshot 2" width="400"></a>
+    </td>
+  </tr>
+</table>
 
 
 
 ---
-
 
 
 ## Windows-Exclusive Features
